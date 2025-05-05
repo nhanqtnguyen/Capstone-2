@@ -3,68 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Nhan (Eric) Nguyen</title>
+    <link rel="stylesheet" href="styles.css">
     
-    <!--font link-->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Header and Navbar-->
-    <header>
-        <div class='logo'>
-            <h2>Nhan Nguyen</h2>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <h2>Nhan (Eric) Nguyen</h2>
         </div>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Project</a></li>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
             </ul>    
         </nav>
-        <a href="#"><button>Contact</button></a>
+        <a href="#contact" class="button">Contact</a>
     </header>
-    <!--Hero-->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">      
-                <h1>Hi, I'm Nhan</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.</p>
-                <a href="#" class="btn">My resume</a>
+
+    <!-- Hero Section -->
+    <section class="hero section">
+        <div class="hero__container">
+            <div class="hero__content">      
+                <h1 class="hero__heading">Hi, I'm Nhan</h1>
+                <p class="hero__text">A self-taught developer with boundless enthusiasm and a coachable mindset who transforms challenges into growth opportunities.</p>
+                <a href="#resume" class="button">My Resume</a>
             </div>
-                
-            <div class="hero-image">
-            <img src="photo.jpg" alt="image of me">
+            <div class="hero__image-container">
+                <img src="photo.jpg" alt="Photo of Nhan Nguyen" class="hero__image">
             </div>
         </div>
     </section>
 
-    <!--Project-->
-    <section class="project">
-        <div class="project-header">
-            <h2>Project</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__description">My project reflects my self-taught journey into web development—each feature a step forward in learning to design, build, and share functional, user-friendly websites from scratch.</p>
 
-        <div class="container">
-            <div class="item item-1">1</div>
-            <div class="item item-2">2</div>
-            <div class="item item-3">3</div>
+        <div class="project-card">
+            <div class="project-card__image" style="background-image: url('project1.jpg');"></div>
+            <div class="project-card__content">
+                <h3 class="project-card__title">Personal Drum Kit</h3>
+                <p class="project-card__description">
+                    A fully responsive drum kit that allows users to play drums.
+                </p>
+                <div class="project-card__tags">
+                    <span class="project-card__tag">HTML5</span>
+                    <span class="project-card__tag">CSS3</span>
+                    <span class="project-card__tag">JavaScript</span>
+                </div>
+                <a href="https://nhanqtnguyen.github.io/drum-kit/" class="project-card__button">View Project</a>
+            </div>
         </div>
     </section>
 
-    <!--Footer-->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-          <p>&copy; 2025 Nhan Nguyen. All rights reserved.</p>
-
+        <div class="footer__container">
+            <p class="footer__text">&copy; 2025 Nhan Nguyen. All rights reserved.</p>
         </div>
-      </footer>
-
+    </footer>
 </body>
-</html> 
+</html>
